@@ -1,0 +1,5 @@
+export enum APP_STORE_HYDRATE {
+  APP_STATE = 'APP_STATE',
+  APP_AUTH = 'APP_AUTH',
+  CLINIC = 'CLINIC',
+}

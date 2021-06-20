@@ -1,0 +1,41 @@
+[
+  {
+    "id": 0,
+    "user": {
+      "id": 0,
+      "fullName": "Ralph Edwards",
+      "userName": "ABC",
+      "avatar": "https://www.pngitem.com/pimgs/m/421-4212341_default-avatar-svg-hd-png-download.png"
+    },
+    "msg": "Aliqua id fugiat nostrud irure ex duis ea quis id quis ad et. Sunt qui esse pariatur duis deserunt mollit dolore cillum minim tempor enim. Elit aute irure tempor",
+    "messageType": "text",
+    "time": "01:04",
+    "positions": "LEFT"
+  },
+  {
+    "id": 1,
+    "user": {
+      "id": 0,
+      "fullName": "Ralph Edwards",
+      "userName": "ABC",
+      "avatar": "https://www.pngitem.com/pimgs/m/421-4212341_default-avatar-svg-hd-png-download.png"
+    },
+    "msg": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim",
+    "messageType": "text",
+    "time": "01:04",
+    "positions": "RIGHT"
+  },
+  {
+    "id": 2,
+    "user": {
+      "id": 0,
+      "fullName": "Ralph Edwards",
+      "userName": "ABC",
+      "avatar": "https://www.pngitem.com/pimgs/m/421-4212341_default-avatar-svg-hd-png-download.png"
+    },
+    "msg": "https://azbigmedia.com/wp-content/uploads/2017/11/doctor-shortage.jpg",
+    "messageType": "img",
+    "time": "01:04",
+    "positions": "RIGHT"
+  }
+]

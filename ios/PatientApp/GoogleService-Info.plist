@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>981846771949-ljts9m5p1fie2arg0p8itn05om8m64rm.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.981846771949-ljts9m5p1fie2arg0p8itn05om8m64rm</string>
+	<key>ANDROID_CLIENT_ID</key>
+	<string>981846771949-3fq6k52oq2scp2or5rjcsuram2quihvt.apps.googleusercontent.com</string>
+	<key>API_KEY</key>
+	<string>AIzaSyD2m9K8WYx08n0o_5P-NtwfSU4cyh8k91w</string>
+	<key>GCM_SENDER_ID</key>
+	<string>981846771949</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>com.avixo.patient.app</string>
+	<key>PROJECT_ID</key>
+	<string>avixo-65doctor-d6178</string>
+	<key>STORAGE_BUCKET</key>
+	<string>avixo-65doctor-d6178.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:981846771949:ios:c95ff5039f2a99c15724e4</string>
+</dict>
+</plist>

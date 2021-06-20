@@ -1,0 +1,108 @@
+fastlane_version '2.171.0'
+
+before_all do
+#   ensure_git_branch
+#   ensure_git_status_clean
+#   git_pull
+end
+
+platform :ios do
+   # iOS Lanes
+   desc 'Fetch certificates and provisioning profiles'
+    lane :certificates do
+    match(app_identifier: 'com.avixo.patient.app', type: 'development', readonly: false)
+    match(app_identifier: 'com.avixo.patient.app', type: 'appstore', readonly: false)
+    end 
+
+    desc 'Build the iOS application.'
+    private_lane :build do
+        produce(
+          username: 'enquiry@65doctor.com',
+          app_identifier: 'com.avixo.patient.app'
+        )
+        increment_build_number(xcodeproj: './ios/PatientApp.xcodeproj')
+        build_app(workspace: "./ios/PatientApp.xcworkspace", scheme: "PatientApp")
+    end
+
+    desc 'Ship to Testflight.'
+    lane :beta do
+        build
+        upload_to_testflight(
+          username: "enquiry@65doctor.com",
+          app_identifier: 'com.avixo.patient.app'
+        )
+        commit_version_bump(message: 'Bump build', xcodeproj: './ios/PatientApp.xcodeproj')
+        push_to_git_remote
+    end
+
+    desc "Generate new localized screenshots"
+    lane :screenshots do
+        capture_screenshots(workspace: "ios/PatientApp.xcworkspace", scheme: "PatientAppUITests")
+    end
+
+    lane(:snappy) do |options|
+        snapshot(
+          project: 'ios/PatientApp.xcodeproj',
+          scheme: 'PatientAppUITests',
+          devices: [
+            "iPhone 8",
+            "iPhone SE (2nd generation)",
+            "iPhone 11",
+            "iPhone 8 Plus",
+            "iPad Pro (12.9-inch) (4th generation)",
+            "iPad Pro (9.7-inch)",
+          ],
+          output_simulator_logs: true,
+          clear_previous_screenshots: true
+        )
+    end
+      
+    lane :tests do
+        run_tests(workspace: "PatientApp.xcworkspace",
+            devices: ["iPhone 8", "iPad Air"],
+            scheme: "PatientApp")
+      end
+end
+
+
+platform :android do
+  desc "Runs all the tests"
+  lane :test do
+    gradle(task: "test")
+  end
+
+  desc "Submit a new Beta Build to Crashlytics Beta"
+  lane :beta do
+    gradle(task: "clean assembleRelease")
+    crashlytics
+  
+    # sh "your_script.sh"
+    # You can also use other beta testing services here
+  end
+
+  desc "Deploy a new version to the Google Play"
+  lane :deploy do
+    # gradle(task: "clean assembleRelease", project_dir: 'android/')
+    upload_to_play_store(
+      track_promote_to: 'internal', 
+      json_key: '/Users/chellong/Workspace/ReactNative/65doctor_docs/pc-api-7972337210978942968-614-c1047afe8c79.json',
+      package_name: "com.avixo.patientapp",
+      skip_upload_apk: true,
+      skip_upload_metadata: true,
+      skip_upload_images: true,
+      skip_upload_screenshots: true,
+      track: 'beta'
+    )
+  end
+
+  desc "Create app"
+  lane :createapp do 
+    create_app_on_managed_play_store(
+      json_key: '/Users/chellong/Workspace/ReactNative/65doctor_docs/pc-api-7972337210978942968-614-1456c9907c69.json',
+      developer_account_id: '7972337210978942968', # obtained using the `get_managed_play_store_publishing_rights` action (or looking at the Play Console url)
+      app_title: 'Avixo Patient',
+      language: 'en_US', # primary app language in BCP 47 format
+      apk: '/Users/chellong/Workspace/ReactNative/patient-app/android/app/build/outputs/apk/release/app-release.apk'
+    )
+  end
+end

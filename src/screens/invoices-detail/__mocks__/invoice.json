@@ -1,0 +1,35 @@
+{
+  "oderCode": 124,
+  "issued": "Oct 20th 2020",
+  "from": {
+    "fullName": "Raplh Edwards",
+    "address": "6391 Elgin St. Celina, Delaware 10299"
+  },
+  "to": {
+    "fullName": "Raplh Edwards",
+    "address": "6391 Elgin St. Celina, Delaware 10299"
+  },
+  "cardNumber": "* * * * * * 1 2 3 4",
+  "expirationDate": "11.2020",
+  "listOder":  [
+    {
+      "id": 0,
+      "orderName": "General consultation",
+      "vat": 0,
+      "total": 0
+    },
+    {
+      "id": 1,
+      "orderName": "Video call",
+      "vat": 0,
+      "total": 35
+    },
+    {
+      "id": 2,
+      "orderName": "Chat",
+      "vat": 0,
+      "total": 35
+    }
+  ],
+  "note": "Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit."
+}

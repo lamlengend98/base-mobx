@@ -1,0 +1,137 @@
+{
+  "project_info": {
+    "project_number": "981846771949",
+    "project_id": "avixo-65doctor-d6178",
+    "storage_bucket": "avixo-65doctor-d6178.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981846771949:android:cd6b42bd80027cf05724e4",
+        "android_client_info": {
+          "package_name": "com.avixo.doctorapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981846771949-3fq6k52oq2scp2or5rjcsuram2quihvt.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.avixo.doctorapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "981846771949-m7gb7v2s4fkfh0v42vda0qk2aro6ra9s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.avixo.doctorapp",
+            "certificate_hash": "37950e673e08fe39159660ba8651ec65a6315f27"
+          }
+        },
+        {
+          "client_id": "981846771949-4i0k8lh0mpjfna5qok9j8pmrfsn0l4u0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMuJmEDr8sAfJwsO0fP6fjs11t4dcGBv4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981846771949-4i0k8lh0mpjfna5qok9j8pmrfsn0l4u0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981846771949:android:c696a95403e991df5724e4",
+        "android_client_info": {
+          "package_name": "com.avixo.patientapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981846771949-m5t77mabb0r44s83hjklbnlf2epq0cjb.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.avixo.patientapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "981846771949-4i0k8lh0mpjfna5qok9j8pmrfsn0l4u0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMuJmEDr8sAfJwsO0fP6fjs11t4dcGBv4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981846771949-4i0k8lh0mpjfna5qok9j8pmrfsn0l4u0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:981846771949:android:3d4d1e02a2b3cc725724e4",
+        "android_client_info": {
+          "package_name": "com.hisoft.patientapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "981846771949-69tfa3ironptcme95cqsm77juf4rj757.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hisoft.patientapp",
+            "certificate_hash": "3548f48277408de1565fdd203dd96fe15822a8fa"
+          }
+        },
+        {
+          "client_id": "981846771949-95a5j3imbf97rf0ndstsq1dccvlmehe8.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.hisoft.patientapp",
+            "certificate_hash": "5e8f16062ea3cd2c4a0d547876baa6f38cabf625"
+          }
+        },
+        {
+          "client_id": "981846771949-4i0k8lh0mpjfna5qok9j8pmrfsn0l4u0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCMuJmEDr8sAfJwsO0fP6fjs11t4dcGBv4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "981846771949-4i0k8lh0mpjfna5qok9j8pmrfsn0l4u0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

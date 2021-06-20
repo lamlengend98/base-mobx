@@ -1,0 +1,4 @@
+Plugins/*
+__mocks__/*
+*/*.d.ts
+metro.config.js

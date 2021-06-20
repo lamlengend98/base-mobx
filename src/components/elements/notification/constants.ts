@@ -1,0 +1,9 @@
+export enum NOTIFICATION_TYPES {
+  CALLBACK_REQUEST = 'call',
+  APPOINTMENT = 'appointment',
+}
+
+export enum ACTION_TYPES {
+  VIEW_DETAILS = 'VIEW_DETAILS',
+  CALLBACK = 'CALLBACK',
+}
