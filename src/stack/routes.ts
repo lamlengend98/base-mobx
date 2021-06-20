@@ -1,4 +1,5 @@
 export enum ROUTES {
+  /* PLOP_INJECT_EXPORT */
   ROOT = 'Root',
   BOTTOM_TABS = 'BottomTabs',
   SPLASH = 'SplashScreen',

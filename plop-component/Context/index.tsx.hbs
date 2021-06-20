@@ -1,0 +1,32 @@
+import React, { useCallback, useMemo } from 'react';
+import { {{pascalCase name}}Context } from './context';
+import { {{pascalCase name}}Props, {{pascalCase name}}Value } from './types';
+
+export const {{pascalCase name}}Provider = ({ children }: {{pascalCase name}}Props) => {
+  const show = useCallback(async () => {
+    try {
+    } catch (error) {
+      throw error;
+    }
+  }, []);
+
+  const hide = useCallback(async () => {
+    try {
+    } catch (error) {
+      throw error;
+    }
+  }, []);
+  const value = useMemo<{{pascalCase name}}Value>(
+    () => ({
+      show: show,
+      hide: hide,
+    }),
+    [hide, show],
+  );
+
+  return (
+    <{{pascalCase name}}Context.Provider {...{ value }}>
+      {children}
+    </{{pascalCase name}}Context.Provider>
+  );
+};

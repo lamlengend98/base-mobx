@@ -21,7 +21,9 @@
     "postinstall": "scripts/setup.sh",
     "ios:beta": "fastlane ios beta",
     "ios:screen-shot": "fastlane ios screenshots",
-    "generate": "plop"
+    "generate-component": "plop component",
+    "generate-context": "plop context",
+    "generate-screen": "plop screen"
   },
   "dependencies": {
     "@codler/react-native-keyboard-aware-scroll-view": "^1.0.1",

@@ -1,0 +1,10 @@
+import { useContext } from 'react';
+import { {{pascalCase name}}Context } from '@/tools/{{pascalCase name}}/context';
+
+export const use{{pascalCase name}} = () => {
+  const payload = useContext({{pascalCase name}}Context);
+  if (!payload) {
+    throw new Error('use{{pascalCase name}} must be use within {{pascalCase name}}Provider.');
+  }
+  return payload;
+};
