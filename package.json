@@ -20,7 +20,8 @@
     "codepush-android:production": "appcenter codepush promote -a HiSoftvn/Avixo-Patient-Android -s Staging -d Production",
     "postinstall": "scripts/setup.sh",
     "ios:beta": "fastlane ios beta",
-    "ios:screen-shot": "fastlane ios screenshots"
+    "ios:screen-shot": "fastlane ios screenshots",
+    "generate": "plop"
   },
   "dependencies": {
     "@codler/react-native-keyboard-aware-scroll-view": "^1.0.1",
@@ -136,6 +137,7 @@
     "eslint-plugin-simple-import-sort": "^5.0.3",
     "jest": "^25.1.0",
     "metro-react-native-babel-preset": "^0.59.0",
+    "plop": "^2.7.4",
     "react-native-svg-transformer": "^0.14.3",
     "react-test-renderer": "16.13.1",
     "typescript": "^3.8.3"
